@@ -1,3 +1,5 @@
 import createConfig from "@gglennd/eslint-config";
 
-export default createConfig();
+export default createConfig({
+  ignores: ["./migrations"],
+});
