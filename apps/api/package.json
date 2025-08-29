@@ -2,18 +2,21 @@
   "name": "@gglennd/api",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "dev": "tsx --env-file=.env --watch src/index.ts",
     "type-check": "tsc --noEmit",
+    "lint": "eslint .",
     "build": "tsc -b && tsc-alias"
   },
-  "packageManager": "pnpm@10.6.5",
   "dependencies": {
     "@hono/node-server": "^1.19.0",
     "hono": "^4.9.4"
   },
   "devDependencies": {
+    "@gglennd/eslint-config": "workspace:^",
     "@types/node": "^24.3.0",
+    "eslint": "^9.33.0",
     "tsc-alias": "^1.8.16",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"

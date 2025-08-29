@@ -1,7 +1,7 @@
-import { Hono } from "hono"
+import { Hono } from "hono";
 
 const app = new Hono()
-.basePath("/")
-.get("/", (c) => c.json({ health : "Ok"}, 200))
+  .basePath("/")
+  .get("/", c => c.json({ health: "Ok" }, 200));
 
-export default app
+export default app;

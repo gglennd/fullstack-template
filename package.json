@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "pnpm run -r --parallel --aggregate-output dev",
+    "lint": "pnpm run -r --parallel lint",
     "build": "pnpm run -r --parallel build"
   },
   "packageManager": "pnpm@10.6.5"
